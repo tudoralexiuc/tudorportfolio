@@ -1,0 +1,405 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'DMBold';
+  src: url(/src/fonts/DMSans-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'DMMedium';
+  src: url(/src/fonts/DMSans-Medium.ttf);
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: 'DMRegular';
+  src: url(/src/fonts/DMSans-Regular.ttf);
+  font-weight: normal;
+}
+
+.dmb {
+  font-family: 'DMBold';
+}
+
+.dmm {
+  font-family: 'DMMedium';
+}
+
+.dmr {
+  font-family: 'DMRegular';
+}
+
+#sheet {
+  animation: sheet 1.5s ease-in-out infinite alternate;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  background-color: #ffffff;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 16px;
+  border: 4px solid #a2a2a2;
+}
+
+.homeButton {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  z-index: 9999;
+  transition: 0.08s ease-in;
+}
+
+.homeButton button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeButton button:before {
+  content: '';
+  position: absolute;
+  background: #ffffff;
+  opacity: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.homeButton button:hover:before {
+  top: 0;
+}
+
+.backButton {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  z-index: 9999;
+  transition: 0.08s ease-in;
+}
+
+.backButton button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backButton button:before {
+  content: '';
+  position: absolute;
+  background: #ffffff;
+  opacity: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.backButton button:hover:before {
+  top: 0;
+}
+
+/* pages */
+
+.aboutme {
+  background-color: #a18276;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.resume {
+  background-color: #aac0aa;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.personal {
+  background-color: #bbc9fc;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.international {
+  background-color: #ffb677;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.group {
+  background-color: #ff8364;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.breathing-button {
+  animation: breathing 2.5s ease-out infinite normal;
+}
+
+@keyframes breathing {
+  0% {
+    transform: scale(1.5);
+  }
+
+  50% {
+    transform: scale(2.5);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: #ffffff;
+  z-index: 9999;
+  transform-origin: 0%;
+}
+
+@keyframes sheet {
+  from {
+    transform: scaleX(0.5);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+#plane {
+  animation: plane 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes plane {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+#people {
+  animation: people 1.5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes people {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#righteye,
+#lefteye {
+  animation: eye 1.5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes eye {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#smile {
+  animation: smile 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes smile {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+#star,
+#message,
+#heart,
+#plus {
+  animation: shapes 1.5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes shapes {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#mylefteye,
+#myrighteye {
+  animation: eyez 1.5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes eyez {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#sad {
+  animation: sad 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes sad {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+.slideText svg {
+  transition: 0.5s ease-in;
+}
+
+.slideText svg:hover {
+  transform: translateX(30px);
+}
+
+.sectionButton button {
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in;
+}
+
+.sectionButton button:before {
+  content: '';
+  position: absolute;
+  background: #ffffff;
+  opacity: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.3s ease-in;
+}
+
+.sectionButton button:hover {
+  transform: translateY(-10px);
+}
+
+.sectionButton button:hover:before {
+  top: 0;
+}
+
+.sectionButtonAnalysis button {
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in;
+}
+
+.sectionButtonAnalysis button:before {
+  content: '';
+  position: absolute;
+  background: #ffffff;
+  opacity: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+}
+
+.sectionButtonAnalysis button:hover {
+  transform: translateY(-10px);
+}
+
+.sectionButtonAnalysis button:hover:before {
+  top: 0;
+}
+
+.clickableButton button {
+  width: 150px;
+  height: 50px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in;
+}
+
+.clickableButton button:before {
+  content: '';
+  position: absolute;
+  background: #ffffff;
+  opacity: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.3s ease-in;
+}
+
+.clickableButton button:hover {
+  transform: translateY(-10px);
+}
+
+.clickableButton button:hover:before {
+  top: 0;
+}
