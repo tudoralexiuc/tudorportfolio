@@ -16,6 +16,7 @@ function About() {
   const { scrollYProgress } = useScroll();
   return (
     <>
+      <div className="noise"></div>
       <motion.div className="homeButton">
         <Link to="/">
           <button className="text-3xl">

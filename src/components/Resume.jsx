@@ -6,6 +6,7 @@ import { IoIosArrowRoundBack, IoIosHome } from 'react-icons/io';
 function Resume() {
   return (
     <>
+      <div className="noise"></div>
       <motion.div className="homeButton">
         <Link to="/">
           <button className="text-3xl">

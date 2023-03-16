@@ -82,6 +82,19 @@
   border: 4px solid #a2a2a2;
 }
 
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: '';
+  opacity: 0.05;
+  z-index: 1000;
+  pointer-events: none;
+  background: url(./pics/noise.gif);
+}
+
 .homeButton {
   position: absolute;
   top: 2%;
