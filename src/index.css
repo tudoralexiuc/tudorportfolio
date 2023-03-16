@@ -20,6 +20,23 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'StudioBold';
+  src: url(/src/fonts/StudioFeixenSansTRIAL-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'StudioMedium';
+  src: url(/src/fonts/StudioFeixenSansTRIAL-Medium.ttf);
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: 'StudioRegular';
+  src: url(/src/fonts/StudioFeixenSansTRIAL-Regular.ttf);
+  font-weight: normal;
+}
+
 .dmb {
   font-family: 'DMBold';
 }
@@ -30,6 +47,18 @@
 
 .dmr {
   font-family: 'DMRegular';
+}
+
+.sb {
+  font-family: 'StudioBold';
+}
+
+.sm {
+  font-family: 'StudioMedium';
+}
+
+.sr {
+  font-family: 'StudioRegular';
 }
 
 #sheet {
@@ -257,10 +286,52 @@
   }
 }
 
+#leftleaf1,
+#rightleaf2 {
+  animation: leaf 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes leaf {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+#leftleaf2,
+#rightleaf1 {
+  animation: leaf 1s ease-in-out infinite alternate;
+}
+
+@keyframes leaf {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+#leftleaf3 {
+  animation: leaf 2s ease-in-out infinite alternate;
+}
+
+@keyframes leaf {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
 #star,
 #message,
 #heart,
-#plus {
+#plus,
+#topleaf {
   animation: shapes 1.5s infinite linear;
   transform-origin: center;
   transform-box: fill-box;
@@ -291,7 +362,8 @@
   }
 }
 
-#sad {
+#sad,
+#formula1 {
   animation: sad 1.5s ease-in-out infinite alternate;
 }
 
