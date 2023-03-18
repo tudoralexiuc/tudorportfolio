@@ -12,6 +12,13 @@ module.exports = {
         'group-project': '#FF8364',
       },
     },
+    screens: {
+      lg: { max: '1700px' },
+
+      md: { max: '1200px' },
+
+      sm: { max: '1023px' },
+    },
   },
   plugins: [],
 };

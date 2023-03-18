@@ -20,23 +20,6 @@
   font-weight: normal;
 }
 
-@font-face {
-  font-family: 'StudioBold';
-  src: url(/src/fonts/StudioFeixenSansTRIAL-Bold.ttf);
-}
-
-@font-face {
-  font-family: 'StudioMedium';
-  src: url(/src/fonts/StudioFeixenSansTRIAL-Medium.ttf);
-  font-weight: medium;
-}
-
-@font-face {
-  font-family: 'StudioRegular';
-  src: url(/src/fonts/StudioFeixenSansTRIAL-Regular.ttf);
-  font-weight: normal;
-}
-
 .dmb {
   font-family: 'DMBold';
 }
@@ -47,18 +30,6 @@
 
 .dmr {
   font-family: 'DMRegular';
-}
-
-.sb {
-  font-family: 'StudioBold';
-}
-
-.sm {
-  font-family: 'StudioMedium';
-}
-
-.sr {
-  font-family: 'StudioRegular';
 }
 
 #sheet {
@@ -386,6 +357,71 @@
   }
   to {
     transform: translateX(10px);
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .slideText svg {
+    width: 250px;
+  }
+
+  .slideText2 svg {
+    width: 100px;
+  }
+
+  .aboutMeMobile {
+    width: 108px;
+    height: 100px;
+  }
+
+  .aboutMeMobileSVG svg {
+    width: 50px;
+  }
+
+  .resumeMobile {
+    width: 196px;
+    height: 176px;
+  }
+
+  .resumeMobileSVG svg {
+    width: 50px;
+  }
+
+  .tuinexpressMobile {
+    width: 168px;
+    height: 153px;
+  }
+
+  .tuinexpressMobileSVG svg {
+    width: 30px;
+  }
+
+  .personalMobile {
+    width: 328px;
+    height: 173px;
+  }
+
+  .personalMobileSVG svg {
+    width: 50px;
+  }
+
+  .formula1Mobile {
+    width: 236px;
+    height: 236px;
+  }
+
+  .formula1MobileSVG svg {
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .homePageMobile {
+    height: 100%;
+  }
+
+  .homePageMobileFlex {
+    flex-direction: column;
   }
 }
 

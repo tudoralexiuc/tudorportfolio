@@ -4,16 +4,10 @@ import myself from '../pics/myself.svg';
 import myselfstick from '../pics/myselfstick.svg';
 import { AiOutlineDown } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import Introduction from './AboutDrop';
 import useScrollSnap from 'react-use-scroll-snap';
-import AboutMeDrop from './AboutDrop';
-import AboutDrop from './AboutDrop';
 import { IoIosArrowRoundBack, IoIosHome } from 'react-icons/io';
 
 function About() {
-  const scrollRef = useRef(null);
-  useScrollSnap({ ref: scrollRef, duration: 1, delay: 1 });
-  const { scrollYProgress } = useScroll();
   return (
     <>
       <div className="noise"></div>
@@ -31,16 +25,12 @@ function About() {
           </button>
         </Link>
       </motion.div>
-      <motion.div
-        className="progress-bar"
-        style={{ scaleX: scrollYProgress }}
-      />
-      <motion.div className="aboutme" ref={scrollRef}>
+      <motion.div className="aboutme">
         <div className="flex h-screen flex-col w-full justify-between pt-[10rem] pb-[10rem] pl-[5rem] pr-[5rem] dmr snap-center">
           <div className="flex w-full justify-between">
             <div className="">
               <motion.h1
-                className="text-7xl text-white"
+                className="text-7xl text-white lg:text-3xl"
                 initial={{ x: '-50vw' }}
                 animate={{ x: 0 }}
                 transition={{ type: 'spring', duration: 1.5, bounce: 0.5 }}
@@ -48,7 +38,7 @@ function About() {
                 CREATIVE
               </motion.h1>
               <motion.h1
-                className="text-7xl text-white"
+                className="text-7xl text-white lg:text-3xl"
                 initial={{ x: '-100vw' }}
                 animate={{ x: 0 }}
                 transition={{ type: 'spring', duration: 2, bounce: 0.3 }}
@@ -56,7 +46,7 @@ function About() {
                 DEVELOPER
               </motion.h1>
               <motion.img
-                className="ml-[20rem]"
+                className="ml-[20rem] lg:ml-[10rem] w-[300px]"
                 src={myself}
                 initial={{ y: '100vw' }}
                 animate={{ y: 0 }}
@@ -64,7 +54,7 @@ function About() {
               />
             </div>
             <motion.h1
-              className="text-7xl text-white"
+              className="text-7xl text-white lg:text-3xl"
               initial={{ x: '-50vw', overflow: 'hidden' }}
               animate={{ x: 0, overflow: 'hidden' }}
               transition={{ type: 'spring', duration: 2, bounce: 0 }}
@@ -72,7 +62,7 @@ function About() {
               HE/HIM
             </motion.h1>
             <motion.img
-              className="absolute right-0"
+              className="absolute right-0 lg:w-[300px]"
               src={myselfstick}
               initial={{ x: '-50vw', overflow: 'hidden' }}
               animate={{ x: 0, overflow: 'hidden' }}
@@ -82,7 +72,7 @@ function About() {
           <div className="flex w-full justify-between">
             <div className="">
               <motion.h1
-                className="text-7xl text-white"
+                className="text-7xl text-white lg:text-3xl"
                 initial={{ x: '100vw' }}
                 animate={{ x: 0 }}
                 transition={{ type: 'spring', duration: 1.5, bounce: 0 }}
@@ -90,7 +80,7 @@ function About() {
                 BASED IN
               </motion.h1>
               <motion.h1
-                className="text-7xl text-white"
+                className="text-7xl text-white lg:text-3xl"
                 initial={{ x: '100vw' }}
                 animate={{ x: 0 }}
                 transition={{ type: 'spring', duration: 2, bounce: 0 }}
@@ -100,7 +90,7 @@ function About() {
             </div>
             <div>
               <motion.h1
-                className="text-7xl text-white"
+                className="text-7xl text-white lg:text-3xl"
                 initial={{ x: '-50vw' }}
                 animate={{ x: 0 }}
                 transition={{ type: 'spring', duration: 1.5, bounce: 0.4 }}
@@ -108,7 +98,7 @@ function About() {
                 TUDOR
               </motion.h1>
               <motion.h1
-                className="text-7xl text-white"
+                className="text-7xl text-white lg:text-3xl"
                 initial={{ x: '-50vw' }}
                 animate={{ x: 0 }}
                 transition={{ type: 'spring', duration: 2, bounce: 0.7 }}
@@ -117,7 +107,6 @@ function About() {
               </motion.h1>
             </div>
           </div>
-          <AboutDrop />
         </div>
         <div className="bg-about-me h-screen dmr flex flex-col justify-between snap-center">
           <div></div>

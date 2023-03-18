@@ -6,14 +6,14 @@ export default function Home() {
   return (
     <>
       <div className="noise"></div>
-      <motion.div className="w-full h-[100vh] bg-olive-green flex flex-col justify-between">
+      <motion.div className="h-screen bg-olive-green flex flex-col justify-between md:h-screen">
         <div></div>
         <div>
-          <div className="flex justify-between items-center">
-            <div className="pl-[10rem] text-white">
+          <div className="flex justify-between items-center homePageMobileFlex">
+            <div className="pl-[10rem] md:pl-[0rem]">
               <Link to="/about">
                 <motion.div
-                  className="pt-[2rem] slideText"
+                  className="pt-[2rem] slideText slideText2"
                   initial={{ y: -300 }}
                   animate={{ y: 0 }}
                   exit={{ opacity: 0, transition: { duration: 0.5 } }}
@@ -124,7 +124,7 @@ export default function Home() {
               </Link>
               <Link to="/resume">
                 <motion.div
-                  className="pt-[2rem] slideText"
+                  className="pt-[2rem] slideText slideText2"
                   initial={{ x: -300 }}
                   animate={{ x: 0 }}
                   exit={{ opacity: 0, transition: { duration: 0.5 } }}
@@ -831,11 +831,11 @@ export default function Home() {
                 </motion.div>
               </Link>
             </div>
-            <div className="flex flex-col items-end pr-[10rem]">
+            <div className="flex flex-col items-end pr-[10rem] md:pr-[0rem]">
               <div className="flex items-end">
                 <Link to="/about">
                   <motion.div
-                    className="w-[148px] h-[160px] bg-about-me cursor-pointer shadow-2xl"
+                    className="w-[148px] h-[160px] bg-about-me cursor-pointer shadow-2xl aboutMeMobile"
                     whileHover={{ scale: 0.95, zIndex: 999 }}
                     transition={{ type: 'spring', stiffness: 100, damping: 20 }}
                     whileTap={{ rotate: -180, scale: 0.25 }}
@@ -843,7 +843,7 @@ export default function Home() {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ opacity: 0, transition: { duration: 0.5 } }}
                   >
-                    <div className="flex justify-center items-center w-full h-full">
+                    <div className="flex justify-center items-center w-full h-full aboutMeMobileSVG">
                       <svg
                         width="106"
                         height="94"
@@ -906,7 +906,7 @@ export default function Home() {
 
                 <Link to="/resume">
                   <motion.div
-                    className="w-[292px] h-[292px] bg-my-resume cursor-pointer shadow-2xl"
+                    className="w-[292px] h-[292px] bg-my-resume cursor-pointer shadow-2xl resumeMobile"
                     whileHover={{ scale: 0.95, zIndex: 999 }}
                     transition={{ type: 'spring', stiffness: 200, damping: 20 }}
                     whileTap={{ rotate: -60, scale: 0.35 }}
@@ -914,7 +914,7 @@ export default function Home() {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ opacity: 0, transition: { duration: 0.5 } }}
                   >
-                    <div className="flex justify-center items-center w-full h-full">
+                    <div className="flex justify-center items-center w-full h-full resumeMobileSVG">
                       <svg
                         width="98"
                         height="129"
@@ -1011,7 +1011,7 @@ export default function Home() {
                 </Link>
                 <Link to="/tuinexpress">
                   <motion.div
-                    className="w-[237px] h-[206px] bg-international-project align-bottom cursor-pointer shadow-2xl"
+                    className="w-[237px] h-[206px] bg-international-project align-bottom cursor-pointer shadow-2xl tuinexpressMobile"
                     whileHover={{ scale: 0.95, zIndex: 999 }}
                     transition={{ type: 'spring', stiffness: 250, damping: 20 }}
                     whileTap={{ translateY: -180, scale: 0.55 }}
@@ -1019,7 +1019,7 @@ export default function Home() {
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ opacity: 0, transition: { duration: 0.5 } }}
                   >
-                    <div className="flex justify-center items-center w-full h-full">
+                    <div className="flex justify-center items-center w-full h-full tuinexpressMobileSVG">
                       <svg
                         width="67"
                         height="142"
@@ -1142,7 +1142,7 @@ export default function Home() {
               <div className="flex">
                 <Link to="/personal">
                   <motion.div
-                    className="w-[416px] h-[246px] bg-personal-project cursor-pointer shadow-2xl"
+                    className="w-[416px] h-[246px] bg-personal-project cursor-pointer shadow-2xl personalMobile"
                     whileHover={{ scale: 0.95, zIndex: 999 }}
                     transition={{ type: 'spring', stiffness: 300, damping: 20 }}
                     whileTap={{ rotate: 180, scale: 0.35 }}
@@ -1150,7 +1150,7 @@ export default function Home() {
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ opacity: 0, transition: { duration: 0.5 } }}
                   >
-                    <div className="flex justify-center items-center w-full h-full">
+                    <div className="flex justify-center items-center w-full h-full personalMobileSVG">
                       <svg
                         width="73"
                         height="76"
@@ -1228,7 +1228,7 @@ export default function Home() {
                 </Link>
                 <Link to="/formula1">
                   <motion.div
-                    className="w-[373px] h-[373px] bg-group-project cursor-pointer shadow-2xl"
+                    className="w-[373px] h-[373px] bg-group-project cursor-pointer shadow-2xl formula1Mobile"
                     whileHover={{ scale: 0.95, zIndex: 999 }}
                     transition={{ type: 'spring', stiffness: 150, damping: 20 }}
                     whileTap={{ rotate: 60, scale: 0.35 }}
@@ -1236,7 +1236,7 @@ export default function Home() {
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ opacity: 0, transition: { duration: 0.5 } }}
                   >
-                    <div className="flex justify-center items-center w-full h-full">
+                    <div className="flex justify-center items-center w-full h-full formula1MobileSVG">
                       <svg
                         width="324"
                         height="89"

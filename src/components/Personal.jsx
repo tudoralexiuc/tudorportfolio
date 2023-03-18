@@ -145,7 +145,7 @@ function Personal() {
         </div>
         <div className="select-none">
           <div className="mt-[5rem] flex justify-center">
-            <img src={table} className="shadow-2xl select-none" />
+            <img src={table} className="shadow-2xl" />
           </div>
           <div className="mt-[5rem] flex justify-center">
             <img src={context} className="shadow-2xl" />
