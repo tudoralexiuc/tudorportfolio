@@ -8,7 +8,7 @@ function BackButton() {
       to="start"
       spy={true}
       smooth={true}
-      className="w-[50px] h-[50px] border-2 flex justify-center items-center cursor-pointer text-white fixed bottom-5 right-[5%]"
+      className="w-[50px] h-[50px] border-2 flex justify-center items-center cursor-pointer text-white fixed bottom-5 right-[5%] z-[9999]"
     >
       <AiFillCaretUp />
     </Link>
