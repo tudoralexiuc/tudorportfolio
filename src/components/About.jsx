@@ -6,6 +6,7 @@ import { AiOutlineDown } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import useScrollSnap from 'react-use-scroll-snap';
 import { IoIosArrowRoundBack, IoIosHome } from 'react-icons/io';
+import BackButton from './personal/BackButton';
 
 function About() {
   return (
@@ -110,9 +111,12 @@ function About() {
         </div>
         <div className="bg-about-me h-screen dmr flex flex-col justify-between snap-center">
           <div></div>
-          <div className="flex row justify-around items-center" id="section2">
+          <div
+            className="flex row justify-around items-center md:flex-col justify-between h-screen"
+            id="section2"
+          >
             <motion.div className="w-[300px] border-4 p-4">
-              <motion.h1 className="text-white text-[1rem] text-justify uppercase first-letter">
+              <motion.h1 className="text-white text-[1rem] text-justify uppercase first-letter lg:text-[0.7rem]">
                 I am a hard-working third year Media Design student that loves
                 creating web designs, while providing the best experience for
                 users. I care about the details and consider the user experience
@@ -120,13 +124,13 @@ function About() {
               </motion.h1>
             </motion.div>
             <div className="border-4 p-4">
-              <h1 className="text-white text-[1rem] text-justify uppercase first-letter">
+              <h1 className="text-white text-[1rem] text-justify uppercase first-letter lg:text-[0.7rem]">
                 I really love biking and I have an affinity for fashion and
                 tattoos.
               </h1>
             </div>
             <div className="w-[300px] border-4 p-4">
-              <h1 className="text-white text-[1rem] text-justify uppercase first-letter">
+              <h1 className="text-white text-[1rem] text-justify uppercase first-letter lg:text-[0.7rem]">
                 When I'm not writing code, I like to broaden my horizons by
                 reading non-fiction books. From biographies to science, I find
                 great joy in learning and discovering new things throughout the

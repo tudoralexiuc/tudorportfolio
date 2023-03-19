@@ -10,6 +10,7 @@ import table from '../pics/table.svg';
 import context from '../pics/context.svg';
 import research from '../pics/research.svg';
 import style from '../pics/realisation.svg';
+import BackButton from './personal/BackButton';
 
 function Personal() {
   return (
@@ -29,8 +30,17 @@ function Personal() {
           </button>
         </Link>
       </motion.div>
-      <div className="bg-personal-project h-full w-full flex flex-col p-[5rem]">
-        <div className="flex justify-center">
+      <div
+        className="bg-personal-project h-full w-full flex flex-col p-[5rem]"
+        id="start"
+      >
+        <BackButton />
+        <motion.div
+          className="flex justify-center"
+          initial={{ x: '100vw' }}
+          animate={{ x: 0 }}
+          transition={{ type: 'spring', duration: 2.5, bounce: 0.3 }}
+        >
           <svg
             width="273"
             height="276"
@@ -103,58 +113,108 @@ function Personal() {
               </g>
             </g>
           </svg>
-        </div>
-        <div className="mt-[5rem] dmb text-[3.5rem] text-left text-[#666d89]">
+        </motion.div>
+        <motion.div
+          className="mt-[5rem] dmb text-[3.5rem] text-left text-[#666d89] lg:text-5xl md:text-2xl"
+          initial={{ x: '-100vw' }}
+          animate={{ x: 0 }}
+          transition={{ type: 'spring', duration: 1.5, bounce: 0.5 }}
+        >
           PERSONAL PROJECT
-        </div>
+        </motion.div>
         <div className="flex">
           <div>
             <div className="flex mt-[3rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#666d89]">
+              <motion.div
+                className="dmb text-[1.5rem] text-left text-[#666d89] lg:text-3xl md:text-base"
+                initial={{ x: '-50vw' }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', duration: 2.5, bounce: 0.5 }}
+              >
                 CATEGORY
-              </div>
+              </motion.div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#666d89]">
+              <motion.div
+                className="dmb text-[1.5rem] text-left text-[#666d89] lg:text-3xl md:text-base"
+                initial={{ x: '-50vw' }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', duration: 2.5, bounce: 0.5 }}
+              >
                 YEAR
-              </div>
+              </motion.div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#666d89]">
+              <motion.div
+                className="dmb text-[1.5rem] text-left text-[#666d89] lg:text-3xl md:text-base"
+                initial={{ x: '-50vw' }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', duration: 2.5, bounce: 0.5 }}
+              >
                 DEVELOPER
-              </div>
+              </motion.div>
             </div>
           </div>
           <div className="ml-[5rem]">
             <div className="flex mt-[3rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white]">
+              <motion.div
+                className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base"
+                initial={{ x: '50vw' }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', duration: 3, bounce: 0.5 }}
+              >
                 WEB DEVELOPMENT
-              </div>
+              </motion.div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white]">
+              <motion.div
+                className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base"
+                initial={{ x: '50vw' }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', duration: 3, bounce: 0.5 }}
+              >
                 2023
-              </div>
+              </motion.div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white]">
+              <motion.div
+                className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base"
+                initial={{ x: '50vw' }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', duration: 3, bounce: 0.5 }}
+              >
                 TUDOR ALEXIUC
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
         <div className="select-none">
           <div className="mt-[5rem] flex justify-center">
-            <img src={table} className="shadow-2xl" />
+            <motion.img
+              src={table}
+              className="shadow-2xl lg:w-[700px] md:w-[500px]"
+              initial={{ x: '-100vw' }}
+              animate={{ x: 0 }}
+              transition={{ type: 'spring', duration: 1.5, bounce: 0.5 }}
+            />
           </div>
           <div className="mt-[5rem] flex justify-center">
-            <img src={context} className="shadow-2xl" />
+            <motion.img
+              src={context}
+              className="shadow-2xl lg:w-[700px] md:w-[500px]"
+              initial={{ x: '-100vw' }}
+              animate={{ x: 0 }}
+              transition={{ type: 'spring', duration: 1.5, bounce: 0.5 }}
+            />
           </div>
           <div className="mt-[5rem] flex justify-center">
-            <img src={research} className="shadow-2xl" />
+            <img
+              src={research}
+              className="shadow-2xl lg:w-[700px] md:w-[500px]"
+            />
           </div>
           <div className="mt-[5rem] flex justify-center">
-            <img src={style} className="shadow-2xl" />
+            <img src={style} className="shadow-2xl lg:w-[700px] md:w-[500px]" />
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ function Resume() {
       </motion.div>
       <motion.div className="resume flex flex-col justify-center">
         <div></div>
-        <div className="flex justify-around">
+        <div className="flex justify-around md:flex-col items-center">
           <div className="flex flex-col text-white">
             <motion.div
               className="pt-10"
@@ -31,11 +31,11 @@ function Resume() {
               animate={{ x: 0 }}
               transition={{ type: 'spring', duration: 2, bounce: 0.5 }}
             >
-              <h1 className="text-5xl dmb">EDUCATION</h1>
-              <h5 className="text-xl dmm">
+              <h1 className="text-5xl dmb lg:text-3xl">EDUCATION</h1>
+              <h5 className="text-xl dmm lg:text-sm">
                 Fontys University of Applied Sciences
               </h5>
-              <h5 className="text-sm dmr">2020-2024</h5>
+              <h5 className="text-sm dmr lg:text-sm">2020-2024</h5>
             </motion.div>
             <motion.div
               className="pt-10"
@@ -43,9 +43,9 @@ function Resume() {
               animate={{ x: 0 }}
               transition={{ type: 'spring', duration: 2.5, bounce: 0.5 }}
             >
-              <h1 className="text-5xl dmb">COURSES</h1>
-              <h5 className="text-xl dmm">Media Design </h5>
-              <h5 className="text-sm dmr">2020</h5>
+              <h1 className="text-5xl dmb lg:text-3xl">COURSES</h1>
+              <h5 className="text-xl dmm lg:text-sm">Media Design </h5>
+              <h5 className="text-sm dmr lg:text-sm">2020</h5>
             </motion.div>
             <motion.div
               className="pt-10"
@@ -53,7 +53,7 @@ function Resume() {
               animate={{ x: 0 }}
               transition={{ type: 'spring', duration: 3, bounce: 0.5 }}
             >
-              <h1 className="text-5xl dmb">SKILLS</h1>
+              <h1 className="text-5xl dmb lg:text-3xl">SKILLS</h1>
               <div className="flex w-[300px] justify-between pt-4">
                 <h5 className="text-sm dmr">Adobe XD</h5>
                 <h5 className="text-sm dmr">3 years</h5>
@@ -107,10 +107,12 @@ function Resume() {
               animate={{ x: 0 }}
               transition={{ type: 'spring', duration: 2, bounce: 0.5 }}
             >
-              <h1 className="text-5xl dmb">CONTACT</h1>
-              <h5 className="text-xl dmm pt-2">+31 (0)6-18395035</h5>
-              <h5 className="text-xl dmm pt-2">talexiuc10@gmail.com</h5>
-              <h5 className="text-xl dmm pt-2">Eindhoven, NL</h5>
+              <h1 className="text-5xl dmb lg:text-3xl">CONTACT</h1>
+              <h5 className="text-xl dmm pt-2 lg:text-sm">+31 (0)6-18395035</h5>
+              <h5 className="text-xl dmm pt-2 lg:text-sm">
+                talexiuc10@gmail.com
+              </h5>
+              <h5 className="text-xl dmm pt-2 lg:text-sm">Eindhoven, NL</h5>
             </motion.div>
             <motion.div
               className="pt-10"
@@ -118,8 +120,8 @@ function Resume() {
               animate={{ x: 0 }}
               transition={{ type: 'spring', duration: 2.5, bounce: 0.5 }}
             >
-              <h1 className="text-5xl dmb">NATIONALITY</h1>
-              <h5 className="text-xl dmm pt-2">Romanian</h5>
+              <h1 className="text-5xl dmb lg:text-3xl">NATIONALITY</h1>
+              <h5 className="text-xl dmm pt-2 lg:text-sm">Romanian</h5>
             </motion.div>
             <motion.div
               className="pt-10"
@@ -127,37 +129,44 @@ function Resume() {
               animate={{ x: 0 }}
               transition={{ type: 'spring', duration: 3, bounce: 0.5 }}
             >
-              <h1 className="text-5xl dmb">PROJECTS</h1>
-              <h5 className="text-xl dmm pt-2">F1 Grandmaster</h5>
+              <h1 className="text-5xl dmb lg:text-3xl">PROJECTS</h1>
+              <h5 className="text-xl dmm pt-2">Personal</h5>
               <h5 className="text-sm dmr w-[650px]">
-                Part of a 4-member team, we had to create from scratch a website
-                for our client, Team Liquid. The idea of the project was to make
-                an innovative rewarding system that would make our client’s fans
-                more engaged. We ended up with an innovative looking front-end,
-                for which we used vanilla JavaScript that was approved by our
-                client, whereas the back-end was implemented using Supabase. The
-                wireframes and prototypes were done using AdobeXD.
+                Out of all the projects I have worked on during my ICT & Media
+                Design studies, this one has been the most captivating to me. I
+                believe the reason for my interest in this project is my passion
+                for developing web applications. The freedom to choose my
+                preferred software, libraries, and frameworks without any
+                restrictions added to the excitement of the project. Upon
+                reflecting on my past development work, I can confidently say
+                that this project has significantly enhanced my front-end
+                development skills.
               </h5>
               <div className="pt-2">
-                <h5 className="text-xl dmm">Sauna Koning</h5>
+                <h5 className="text-xl dmm">F1 Grandstands</h5>
                 <h5 className="text-sm dmr w-[650px]">
-                  Part of a 4-member team, we had to redesign and build a new
-                  website for Sauna Koning. Our client was Webber and the main
-                  goal was to focus on UI and a much better UX. Our product,
-                  which had an unique and responsive design, was created using
-                  vanilla JavaScript, fulfilled the client expectations.
-                  Wireframes and prototypes were also done using Adobe XD.
+                  Part of a 4-member team, we had to create from scratch a
+                  website for our client, Team Liquid. The idea of the project
+                  was to make an innovative rewarding system that would make our
+                  client’s fans more engaged. We ended up with an innovative
+                  looking front-end, for which we used vanilla JavaScript that
+                  was approved by our client, whereas the back-end was
+                  implemented using Supabase. The wireframes and prototypes were
+                  done using AdobeXD.
                 </h5>
               </div>
               <div className="pt-2">
                 <h5 className="text-xl dmm">Tuinexpress</h5>
                 <h5 className="text-sm dmr w-[650px]">
-                  Part of a 4-member team, we had to redesign and build a new
-                  website for Sauna Koning. Our client was Webber and the main
-                  goal was to focus on UI and a much better UX. Our product,
-                  which had an unique and responsive design, was created using
-                  vanilla JavaScript, fulfilled the client expectations.
-                  Wireframes and prototypes were also done using Adobe XD.
+                  During my internship, I decided to work for Tuinexpress in
+                  Nieuwkuijk. I am very thankful for the opportunity and I have
+                  managed to prove myself as a valuable colleague for the
+                  company. Valuable experiences that I took away from this
+                  internship are: extracting stakeholders' requirements and
+                  adjusting to their needs, better managing my time to
+                  successfully meet the deadlines, having regular meetings with
+                  my stakeholders to discuss my progress, and learning to adapt
+                  to new technologies and tools.
                 </h5>
               </div>
             </motion.div>

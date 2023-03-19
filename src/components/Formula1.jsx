@@ -12,6 +12,7 @@ import shopF1 from '../pics/shopF1.png';
 import rewardsF1 from '../pics/rewardsF1.png';
 import loginF1 from '../pics/loginF1.png';
 import registerF1 from '../pics/registerF1.png';
+import BackButton from '../components/personal/BackButton';
 
 function Formula1() {
   return (
@@ -31,8 +32,17 @@ function Formula1() {
           </button>
         </Link>
       </motion.div>
-      <div className="bg-group-project h-full w-full flex flex-col p-[5rem]">
-        <div className="flex justify-center">
+      <div
+        className="bg-group-project h-full w-full flex flex-col p-[5rem]"
+        id="start"
+      >
+        <BackButton />
+        <motion.div
+          className="flex justify-center"
+          initial={{ y: '100vw' }}
+          animate={{ y: 0 }}
+          transition={{ type: 'spring', duration: 2, bounce: 0.3 }}
+        >
           <svg
             width="524"
             height="289"
@@ -182,81 +192,100 @@ function Formula1() {
               </g>
             </g>
           </svg>
-        </div>
-        <div className="mt-[5rem] dmb text-[3.5rem] text-left text-[#733F32]">
+        </motion.div>
+        <motion.div
+          className="mt-[5rem] dmb text-[3.5rem] text-left text-[#733F32] lg:text-5xl md:text-2xl"
+          initial={{ x: '100vw' }}
+          animate={{ x: 0 }}
+          transition={{ type: 'spring', duration: 2, bounce: 0.3 }}
+        >
           F1 GRANDSTANDS PROJECT
-        </div>
+        </motion.div>
         <div className="flex">
-          <div>
+          <motion.div
+            initial={{ x: '-100vw' }}
+            animate={{ x: 0 }}
+            transition={{ type: 'spring', duration: 3, bounce: 0.6 }}
+          >
             <div className="flex mt-[3rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#733F32]">
+              <div className="dmb text-[1.5rem] text-left text-[#733F32] lg:text-3xl md:text-base">
                 CATEGORY
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#733F32]">
+              <div className="dmb text-[1.5rem] text-left text-[#733F32] lg:text-3xl md:text-base">
                 YEAR
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#733F32]">
+              <div className="dmb text-[1.5rem] text-left text-[#733F32] lg:text-3xl md:text-base">
                 CLIENT
               </div>
             </div>
-          </div>
-          <div className="ml-[5rem]">
+          </motion.div>
+          <motion.div
+            className="ml-[5rem]"
+            initial={{ x: '-100vw' }}
+            animate={{ x: 0 }}
+            transition={{ type: 'spring', duration: 2.5, bounce: 0.3 }}
+          >
             <div className="flex mt-[3rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white]">
+              <div className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
                 WEB DEVELOPMENT
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white]">
+              <div className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
                 2021
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white]">
+              <div className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
                 TEAM LIQUID
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="flex flex-col items-center">
+        <motion.div
+          className="flex flex-col items-center"
+          initial={{ x: '-100vw' }}
+          animate={{ x: 0 }}
+          transition={{ type: 'spring', duration: 2, bounce: 0.7 }}
+        >
           <div className="mt-[4rem] dmb text-[1.5rem] text-left text-[#733F32]">
             INDEX
           </div>
-          <div className="mt-[2rem] w-[900px]">
+          <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
             <img src={indexF1} className="shadow-2xl" />
           </div>
           <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[#733F32]">
             REGISTER & LOGIN
           </div>
-          <div className="mt-[2rem] w-[900px]">
+          <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
             <img src={loginF1} className="shadow-2xl" />
           </div>
-          <div className="mt-[5rem] w-[900px]">
+          <div className="mt-[5rem] w-[900px] lg:w-[700px] md:w-[500px]">
             <img src={registerF1} className="shadow-2xl" />
           </div>
           <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[#733F32]">
             FORMULA 1 GAME
           </div>
-          <div className="mt-[2rem] w-[900px]">
+          <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
             <img src={gameF1} className="shadow-2xl" />
           </div>
           <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[#733F32]">
             SHOP
           </div>
-          <div className="mt-[2rem] w-[900px] shadow-2xl">
+          <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
             <img src={shopF1} className="shadow-2xl" />
           </div>
           <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[#733F32]">
             REWARDS
           </div>
-          <div className="mt-[2rem] w-[900px] drop-shadow-2xl">
+          <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
             <img src={rewardsF1} className="shadow-2xl" />
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

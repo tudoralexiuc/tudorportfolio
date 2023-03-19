@@ -12,6 +12,7 @@ import cartprototypemobile from '../pics/cartprototypemobile.png';
 import cartvideo from '../pics/cartvideo.mp4';
 import footerprototype from '../pics/footerprototype.jpg';
 import footerprototypemobile from '../pics/footerprototypemobile.png';
+import BackButton from './personal/BackButton';
 
 function Tuinexpress() {
   return (
@@ -31,8 +32,17 @@ function Tuinexpress() {
           </button>
         </Link>
       </motion.div>
-      <div className="bg-international-project h-full w-full flex flex-col p-[5rem]">
-        <div className="flex justify-center">
+      <div
+        className="bg-international-project h-full w-full flex flex-col p-[5rem]"
+        id="start"
+      >
+        <BackButton />
+        <motion.div
+          className="flex justify-center"
+          initial={{ y: '100vw' }}
+          animate={{ y: 0 }}
+          transition={{ type: 'spring', duration: 2, bounce: 0.3 }}
+        >
           <svg
             width="267"
             height="242"
@@ -148,62 +158,89 @@ function Tuinexpress() {
               />
             </g>
           </svg>
-        </div>
-        <div className="mt-[5rem] dmb text-[3.5rem] text-left text-[#BE7536]">
+        </motion.div>
+        <motion.div
+          className="mt-[5rem] dmb text-[3.5rem] text-left text-[#BE7536] lg:text-5xl md:text-2xl"
+          initial={{ x: '-100vw' }}
+          animate={{ x: 0 }}
+          transition={{ type: 'spring', duration: 2, bounce: 0.3 }}
+        >
           TUINEXPRESS PROJECT
-        </div>
+        </motion.div>
         <div className="flex">
-          <div>
+          <motion.div
+            initial={{ x: '-100vw' }}
+            animate={{ x: 0 }}
+            transition={{ type: 'spring', duration: 1, bounce: 0.5 }}
+          >
             <div className="flex mt-[3rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#BE7536]">
+              <div className="dmb text-[1.5rem] text-left text-[#BE7536] lg:text-3xl md:text-base">
                 CATEGORY
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#BE7536]">
+              <div className="dmb text-[1.5rem] text-left text-[#BE7536] lg:text-3xl md:text-base">
                 YEAR
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#BE7536]">
+              <div className="dmb text-[1.5rem] text-left text-[#BE7536] lg:text-3xl md:text-base">
                 CLIENT
               </div>
             </div>
-          </div>
-          <div className="ml-[5rem]">
+          </motion.div>
+          <motion.div
+            className="ml-[5rem]"
+            initial={{ x: '-50vw' }}
+            animate={{ x: 0 }}
+            transition={{ type: 'spring', duration: 2, bounce: 0.3 }}
+          >
             <div className="flex mt-[3rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white]">
+              <div className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
                 WEB DEVELOPMENT
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white]">
+              <div className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
                 2022
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white]">
+              <div className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
                 TUINEXPRESS
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col items-center">
-          <div className="mt-[4rem] dmb text-[1.5rem] text-left text-[#BE7536]">
+          <motion.div
+            className="mt-[4rem] dmb text-[1.5rem] text-left text-[#BE7536]"
+            initial={{ x: '-100vw' }}
+            animate={{ x: 0 }}
+            transition={{ type: 'spring', duration: 2.5, bounce: 0.3 }}
+          >
             CHECKOUT
-          </div>
-          <div className="mt-[2rem] w-[900px]">
+          </motion.div>
+          <motion.div
+            className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]"
+            initial={{ x: '-100vw' }}
+            animate={{ x: 0 }}
+            transition={{ type: 'spring', duration: 2.5, bounce: 0.3 }}
+          >
             <img src={checkoutpageafterchanges} className="shadow-2xl" />
-          </div>
-          <video
+          </motion.div>
+          <motion.video
             autoPlay
             loop
             muted
             playsInline
-            className="mt-[5rem] w-[900px] shadow-2xl"
+            className="mt-[5rem] w-[900px] shadow-2xl lg:w-[700px] md:w-[500px]"
+            initial={{ x: '-100vw' }}
+            animate={{ x: 0 }}
+            transition={{ type: 'spring', duration: 2, bounce: 0.2 }}
           >
             <source src={myfirstcheckoutpageshowcase}></source>
-          </video>
+          </motion.video>
           <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[#BE7536]">
             CART
           </div>
@@ -215,14 +252,14 @@ function Tuinexpress() {
             loop
             muted
             playsInline
-            className="mt-[5rem] w-[900px] shadow-2xl"
+            className="mt-[5rem] w-[900px] shadow-2xl lg:w-[700px] md:w-[500px]"
           >
             <source src={cartvideo}></source>
           </video>
           <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[#BE7536]">
             FOOTER
           </div>
-          <div className="mt-[2rem] w-[900px]">
+          <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
             <img src={footerprototype} className="shadow-2xl" />
           </div>
           <div className="mt-[5rem] w-[300px]">
