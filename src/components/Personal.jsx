@@ -9,7 +9,8 @@ import {
 import table from '../pics/table.svg';
 import context from '../pics/context.svg';
 import research from '../pics/research.svg';
-import style from '../pics/realisation.svg';
+import style from '../pics/style.svg';
+import realisation from '../pics/realisation.svg';
 import BackButton from './personal/BackButton';
 
 function Personal() {
@@ -208,13 +209,22 @@ function Personal() {
             />
           </div>
           <div className="mt-[5rem] flex justify-center">
-            <img
+            <motion.img
               src={research}
               className="shadow-2xl lg:w-[700px] md:w-[500px]"
+              initial={{ x: '-100vw' }}
+              animate={{ x: 0 }}
+              transition={{ type: 'spring', duration: 1.5, bounce: 0.5 }}
             />
           </div>
           <div className="mt-[5rem] flex justify-center">
             <img src={style} className="shadow-2xl lg:w-[700px] md:w-[500px]" />
+          </div>
+          <div className="mt-[5rem] flex justify-center">
+            <img
+              src={realisation}
+              className="shadow-2xl lg:w-[700px] md:w-[500px]"
+            />
           </div>
         </div>
       </div>
