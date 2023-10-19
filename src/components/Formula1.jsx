@@ -41,7 +41,7 @@ function Formula1() {
           className="flex justify-center"
           initial={{ y: '100vw' }}
           animate={{ y: 0 }}
-          transition={{ type: 'spring', duration: 2, bounce: 0.3 }}
+          transition={{ type: 'spring', duration: 2, bounce: 0.2 }}
         >
           <svg
             width="524"
@@ -194,10 +194,10 @@ function Formula1() {
           </svg>
         </motion.div>
         <motion.div
-          className="mt-[5rem] dmb text-[3.5rem] text-left text-[#733F32] lg:text-5xl md:text-2xl"
+          className="mt-[5rem] dmb text-[3.5rem] text-left text-[white] lg:text-5xl md:text-2xl"
           initial={{ x: '100vw' }}
           animate={{ x: 0 }}
-          transition={{ type: 'spring', duration: 2, bounce: 0.3 }}
+          transition={{ type: 'spring', duration: 2, bounce: 0.2 }}
         >
           F1 GRANDSTANDS PROJECT
         </motion.div>
@@ -205,20 +205,20 @@ function Formula1() {
           <motion.div
             initial={{ x: '-100vw' }}
             animate={{ x: 0 }}
-            transition={{ type: 'spring', duration: 3, bounce: 0.6 }}
+            transition={{ type: 'spring', duration: 3, bounce: 0.2 }}
           >
             <div className="flex mt-[3rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#733F32] lg:text-3xl md:text-base">
+              <div className="dmb text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
                 CATEGORY
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#733F32] lg:text-3xl md:text-base">
+              <div className="dmb text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
                 YEAR
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#733F32] lg:text-3xl md:text-base">
+              <div className="dmb text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
                 CLIENT
               </div>
             </div>
@@ -227,20 +227,20 @@ function Formula1() {
             className="ml-[5rem]"
             initial={{ x: '-100vw' }}
             animate={{ x: 0 }}
-            transition={{ type: 'spring', duration: 2.5, bounce: 0.3 }}
+            transition={{ type: 'spring', duration: 2.5, bounce: 0.2 }}
           >
             <div className="flex mt-[3rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
+              <div className="dmr text-[1.5rem] text-left text-[#733F32] lg:text-3xl md:text-base">
                 WEB DEVELOPMENT
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
+              <div className="dmr text-[1.5rem] text-left text-[#733F32] lg:text-3xl md:text-base">
                 2021
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
+              <div className="dmr text-[1.5rem] text-left text-[#733F32] lg:text-3xl md:text-base">
                 TEAM LIQUID
               </div>
             </div>
@@ -250,15 +250,15 @@ function Formula1() {
           className="flex flex-col items-center"
           initial={{ x: '-100vw' }}
           animate={{ x: 0 }}
-          transition={{ type: 'spring', duration: 2, bounce: 0.7 }}
+          transition={{ type: 'spring', duration: 2, bounce: 0.2 }}
         >
-          <div className="mt-[4rem] dmb text-[1.5rem] text-left text-[#733F32]">
+          <div className="mt-[4rem] dmb text-[1.5rem] text-left text-[white]">
             INDEX
           </div>
           <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
             <img src={indexF1} className="shadow-2xl" />
           </div>
-          <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[#733F32]">
+          <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[white]">
             REGISTER & LOGIN
           </div>
           <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
@@ -267,19 +267,19 @@ function Formula1() {
           <div className="mt-[5rem] w-[900px] lg:w-[700px] md:w-[500px]">
             <img src={registerF1} className="shadow-2xl" />
           </div>
-          <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[#733F32]">
+          <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[white]">
             FORMULA 1 GAME
           </div>
           <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
             <img src={gameF1} className="shadow-2xl" />
           </div>
-          <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[#733F32]">
+          <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[white]">
             SHOP
           </div>
           <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
             <img src={shopF1} className="shadow-2xl" />
           </div>
-          <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[#733F32]">
+          <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[white]">
             REWARDS
           </div>
           <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">

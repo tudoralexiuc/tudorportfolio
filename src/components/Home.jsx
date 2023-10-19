@@ -13,7 +13,7 @@ export default function Home() {
             <div className="pl-[10rem] md:pl-[0rem]">
               <Link to="/about">
                 <motion.div
-                  className="pt-[2rem] slideText slideText2"
+                  className="pt-[2rem] slideText2"
                   initial={{ y: -300 }}
                   animate={{ y: 0 }}
                   exit={{ opacity: 0, transition: { duration: 0.5 } }}
@@ -124,7 +124,7 @@ export default function Home() {
               </Link>
               <Link to="/resume">
                 <motion.div
-                  className="pt-[2rem] slideText slideText2"
+                  className="pt-[2rem] slideText2"
                   initial={{ x: -300 }}
                   animate={{ x: 0 }}
                   exit={{ opacity: 0, transition: { duration: 0.5 } }}
@@ -835,7 +835,7 @@ export default function Home() {
               <div className="flex items-end">
                 <Link to="/about">
                   <motion.div
-                    className="w-[148px] h-[160px] bg-about-me cursor-pointer shadow-2xl aboutMeMobile"
+                    className="w-[148px] h-[160px] bg-about-me cursor-pointer shadow-2xl aboutMeMobile md:w-[74px] md:h-[80px]"
                     whileHover={{ scale: 0.95, zIndex: 999 }}
                     transition={{ type: 'spring', stiffness: 100, damping: 20 }}
                     whileTap={{ rotate: -180, scale: 0.25 }}
@@ -906,7 +906,7 @@ export default function Home() {
 
                 <Link to="/resume">
                   <motion.div
-                    className="w-[292px] h-[292px] bg-my-resume cursor-pointer shadow-2xl resumeMobile"
+                    className="w-[292px] h-[292px] bg-my-resume cursor-pointer shadow-2xl resumeMobile md:w-[146px] md:h-[146px]"
                     whileHover={{ scale: 0.95, zIndex: 999 }}
                     transition={{ type: 'spring', stiffness: 200, damping: 20 }}
                     whileTap={{ rotate: -60, scale: 0.35 }}
@@ -1011,7 +1011,7 @@ export default function Home() {
                 </Link>
                 <Link to="/tuinexpress">
                   <motion.div
-                    className="w-[237px] h-[206px] bg-international-project align-bottom cursor-pointer shadow-2xl tuinexpressMobile"
+                    className="w-[237px] h-[206px] bg-international-project align-bottom cursor-pointer shadow-2xl tuinexpressMobile md:w-[118px] md:h-[103px]"
                     whileHover={{ scale: 0.95, zIndex: 999 }}
                     transition={{ type: 'spring', stiffness: 250, damping: 20 }}
                     whileTap={{ translateY: -180, scale: 0.55 }}
@@ -1142,7 +1142,7 @@ export default function Home() {
               <div className="flex">
                 <Link to="/personal">
                   <motion.div
-                    className="w-[416px] h-[246px] bg-personal-project cursor-pointer shadow-2xl personalMobile"
+                    className="w-[416px] h-[246px] bg-personal-project cursor-pointer shadow-2xl personalMobile md:w-[208px] md:h-[123px]"
                     whileHover={{ scale: 0.95, zIndex: 999 }}
                     transition={{ type: 'spring', stiffness: 300, damping: 20 }}
                     whileTap={{ rotate: 180, scale: 0.35 }}
@@ -1228,7 +1228,7 @@ export default function Home() {
                 </Link>
                 <Link to="/formula1">
                   <motion.div
-                    className="w-[373px] h-[373px] bg-group-project cursor-pointer shadow-2xl formula1Mobile"
+                    className="w-[373px] h-[373px] bg-group-project cursor-pointer shadow-2xl formula1Mobile md:w-[186px] md:h-[186px]"
                     whileHover={{ scale: 0.95, zIndex: 999 }}
                     transition={{ type: 'spring', stiffness: 150, damping: 20 }}
                     whileTap={{ rotate: 60, scale: 0.35 }}

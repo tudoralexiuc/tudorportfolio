@@ -26,7 +26,7 @@ function About() {
           </button>
         </Link>
       </motion.div>
-      <motion.div className="aboutme">
+      <motion.div className="aboutme overflow-x-hidden overflow-y-scroll">
         <div className="flex h-screen flex-col w-full justify-between pt-[10rem] pb-[10rem] pl-[5rem] pr-[5rem] dmr snap-center">
           <div className="flex w-full justify-between">
             <div className="">
@@ -34,7 +34,7 @@ function About() {
                 className="text-7xl text-white lg:text-3xl"
                 initial={{ x: '-50vw' }}
                 animate={{ x: 0 }}
-                transition={{ type: 'spring', duration: 1.5, bounce: 0.5 }}
+                transition={{ type: 'spring', duration: 1.5, bounce: 0.2 }}
               >
                 CREATIVE
               </motion.h1>
@@ -42,32 +42,32 @@ function About() {
                 className="text-7xl text-white lg:text-3xl"
                 initial={{ x: '-100vw' }}
                 animate={{ x: 0 }}
-                transition={{ type: 'spring', duration: 2, bounce: 0.3 }}
+                transition={{ type: 'spring', duration: 2, bounce: 0.2 }}
               >
                 DEVELOPER
               </motion.h1>
               <motion.img
-                className="ml-[20rem] lg:ml-[10rem] w-[300px]"
+                className="ml-[20rem] lg:ml-[10rem] w-[300px] md:w-[200px] md:ml-[2rem]"
                 src={myself}
                 initial={{ y: '100vw' }}
                 animate={{ y: 0 }}
-                transition={{ type: 'spring', duration: 1.5, bounce: 0.3 }}
+                transition={{ type: 'spring', duration: 1.5, bounce: 0.2 }}
               />
             </div>
             <motion.h1
               className="text-7xl text-white lg:text-3xl"
               initial={{ x: '-50vw', overflow: 'hidden' }}
               animate={{ x: 0, overflow: 'hidden' }}
-              transition={{ type: 'spring', duration: 2, bounce: 0 }}
+              transition={{ type: 'spring', duration: 2, bounce: 0.2 }}
             >
               HE/HIM
             </motion.h1>
             <motion.img
-              className="absolute right-0 lg:w-[300px]"
+              className="absolute right-0 lg:w-[300px] md:w-[200px] md:top-[12rem]"
               src={myselfstick}
               initial={{ x: '-50vw', overflow: 'hidden' }}
               animate={{ x: 0, overflow: 'hidden' }}
-              transition={{ type: 'spring', duration: 1.5, bounce: 0 }}
+              transition={{ type: 'spring', duration: 1.5, bounce: 0.2 }}
             />
           </div>
           <div className="flex w-full justify-between">
@@ -76,7 +76,7 @@ function About() {
                 className="text-7xl text-white lg:text-3xl"
                 initial={{ x: '100vw' }}
                 animate={{ x: 0 }}
-                transition={{ type: 'spring', duration: 1.5, bounce: 0 }}
+                transition={{ type: 'spring', duration: 1.5, bounce: 0.2 }}
               >
                 BASED IN
               </motion.h1>
@@ -84,7 +84,7 @@ function About() {
                 className="text-7xl text-white lg:text-3xl"
                 initial={{ x: '100vw' }}
                 animate={{ x: 0 }}
-                transition={{ type: 'spring', duration: 2, bounce: 0 }}
+                transition={{ type: 'spring', duration: 2, bounce: 0.2 }}
               >
                 EINDHOVEN
               </motion.h1>
@@ -94,7 +94,7 @@ function About() {
                 className="text-7xl text-white lg:text-3xl"
                 initial={{ x: '-50vw' }}
                 animate={{ x: 0 }}
-                transition={{ type: 'spring', duration: 1.5, bounce: 0.4 }}
+                transition={{ type: 'spring', duration: 1.5, bounce: 0.2 }}
               >
                 TUDOR
               </motion.h1>
@@ -102,40 +102,34 @@ function About() {
                 className="text-7xl text-white lg:text-3xl"
                 initial={{ x: '-50vw' }}
                 animate={{ x: 0 }}
-                transition={{ type: 'spring', duration: 2, bounce: 0.7 }}
+                transition={{ type: 'spring', duration: 2, bounce: 0.2 }}
               >
                 ALEXIUC
               </motion.h1>
             </div>
           </div>
         </div>
-        <div className="bg-about-me h-screen dmr flex flex-col justify-between snap-center">
+        <div className="bg-about-me dmr snap-center">
           <div></div>
-          <div
-            className="flex row justify-around items-center md:flex-col justify-between h-screen"
-            id="section2"
-          >
-            <motion.div className="w-[300px] border-4 p-4">
-              <motion.h1 className="text-white text-[1rem] text-justify uppercase first-letter lg:text-[0.7rem]">
-                I am a hard-working third year Media Design student that loves
+          <div className="md:flex-col justify-between" id="section2">
+            <motion.div className="">
+              <motion.h1 className="text-white text-[3.8rem] p-[1rem] text-justify uppercase first-letter lg:text-[1.5rem] md:text-[1rem]">
+                I am a hard-working fourth year Media Design student that loves
                 creating web designs, while providing the best experience for
                 users. I care about the details and consider the user experience
-                to be crucial in creating effective and enjoyable interfaces.
-              </motion.h1>
-            </motion.div>
-            <div className="border-4 p-4">
-              <h1 className="text-white text-[1rem] text-justify uppercase first-letter lg:text-[0.7rem]">
-                I really love biking and I have an affinity for fashion and
-                tattoos.
-              </h1>
-            </div>
-            <div className="w-[300px] border-4 p-4">
-              <h1 className="text-white text-[1rem] text-justify uppercase first-letter lg:text-[0.7rem]">
-                When I'm not writing code, I like to broaden my horizons by
-                reading non-fiction books. From biographies to science, I find
+                to be crucial in creating effective and enjoyable interfaces I
+                really love biking and I have an affinity for fashion and
+                tattoos When I'm not writing code, I like to broaden my horizons
+                by reading non-fiction books From biographies to science, I find
                 great joy in learning and discovering new things throughout the
                 written word
-              </h1>
+              </motion.h1>
+            </motion.div>
+            <div className="">
+              <h1 className="text-white text-[1rem] text-justify uppercase first-letter lg:text-[0.7rem]"></h1>
+            </div>
+            <div className="">
+              <h1 className="text-white text-[1rem] text-justify uppercase first-letter lg:text-[0.7rem]"></h1>
             </div>
           </div>
           <div></div>

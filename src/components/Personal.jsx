@@ -116,10 +116,10 @@ function Personal() {
           </svg>
         </motion.div>
         <motion.div
-          className="mt-[5rem] dmb text-[3.5rem] text-left text-[#666d89] lg:text-5xl md:text-2xl"
+          className="mt-[5rem] dmb text-[3.5rem] text-left text-[white] lg:text-5xl md:text-2xl"
           initial={{ x: '-100vw' }}
           animate={{ x: 0 }}
-          transition={{ type: 'spring', duration: 1.5, bounce: 0.5 }}
+          transition={{ type: 'spring', duration: 1.5, bounce: 0.2 }}
         >
           PERSONAL PROJECT
         </motion.div>
@@ -127,30 +127,30 @@ function Personal() {
           <div>
             <div className="flex mt-[3rem]">
               <motion.div
-                className="dmb text-[1.5rem] text-left text-[#666d89] lg:text-3xl md:text-base"
+                className="dmb text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base"
                 initial={{ x: '-50vw' }}
                 animate={{ x: 0 }}
-                transition={{ type: 'spring', duration: 2.5, bounce: 0.5 }}
+                transition={{ type: 'spring', duration: 2.5, bounce: 0.2 }}
               >
                 CATEGORY
               </motion.div>
             </div>
             <div className="flex mt-[1.5rem]">
               <motion.div
-                className="dmb text-[1.5rem] text-left text-[#666d89] lg:text-3xl md:text-base"
+                className="dmb text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base"
                 initial={{ x: '-50vw' }}
                 animate={{ x: 0 }}
-                transition={{ type: 'spring', duration: 2.5, bounce: 0.5 }}
+                transition={{ type: 'spring', duration: 2.5, bounce: 0.2 }}
               >
                 YEAR
               </motion.div>
             </div>
             <div className="flex mt-[1.5rem]">
               <motion.div
-                className="dmb text-[1.5rem] text-left text-[#666d89] lg:text-3xl md:text-base"
+                className="dmb text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base"
                 initial={{ x: '-50vw' }}
                 animate={{ x: 0 }}
-                transition={{ type: 'spring', duration: 2.5, bounce: 0.5 }}
+                transition={{ type: 'spring', duration: 2.5, bounce: 0.2 }}
               >
                 DEVELOPER
               </motion.div>
@@ -159,30 +159,30 @@ function Personal() {
           <div className="ml-[5rem]">
             <div className="flex mt-[3rem]">
               <motion.div
-                className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base"
+                className="dmr text-[1.5rem] text-left text-[#666d89] lg:text-3xl md:text-base"
                 initial={{ x: '50vw' }}
                 animate={{ x: 0 }}
-                transition={{ type: 'spring', duration: 3, bounce: 0.5 }}
+                transition={{ type: 'spring', duration: 3, bounce: 0.2 }}
               >
                 WEB DEVELOPMENT
               </motion.div>
             </div>
             <div className="flex mt-[1.5rem]">
               <motion.div
-                className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base"
+                className="dmr text-[1.5rem] text-left text-[#666d89] lg:text-3xl md:text-base"
                 initial={{ x: '50vw' }}
                 animate={{ x: 0 }}
-                transition={{ type: 'spring', duration: 3, bounce: 0.5 }}
+                transition={{ type: 'spring', duration: 3, bounce: 0.2 }}
               >
                 2023
               </motion.div>
             </div>
             <div className="flex mt-[1.5rem]">
               <motion.div
-                className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base"
+                className="dmr text-[1.5rem] text-left text-[#666d89] lg:text-3xl md:text-base"
                 initial={{ x: '50vw' }}
                 animate={{ x: 0 }}
-                transition={{ type: 'spring', duration: 3, bounce: 0.5 }}
+                transition={{ type: 'spring', duration: 3, bounce: 0.2 }}
               >
                 TUDOR ALEXIUC
               </motion.div>
@@ -196,7 +196,7 @@ function Personal() {
               className="shadow-2xl lg:w-[700px] md:w-[500px]"
               initial={{ x: '-100vw' }}
               animate={{ x: 0 }}
-              transition={{ type: 'spring', duration: 1.5, bounce: 0.5 }}
+              transition={{ type: 'spring', duration: 1.5, bounce: 0.2 }}
             />
           </div>
           <div className="mt-[5rem] flex justify-center">
@@ -205,7 +205,7 @@ function Personal() {
               className="shadow-2xl lg:w-[700px] md:w-[500px]"
               initial={{ x: '-100vw' }}
               animate={{ x: 0 }}
-              transition={{ type: 'spring', duration: 1.5, bounce: 0.5 }}
+              transition={{ type: 'spring', duration: 1.5, bounce: 0.2 }}
             />
           </div>
           <div className="mt-[5rem] flex justify-center">
@@ -214,7 +214,7 @@ function Personal() {
               className="shadow-2xl lg:w-[700px] md:w-[500px]"
               initial={{ x: '-100vw' }}
               animate={{ x: 0 }}
-              transition={{ type: 'spring', duration: 1.5, bounce: 0.5 }}
+              transition={{ type: 'spring', duration: 1.5, bounce: 0.2 }}
             />
           </div>
           <div className="mt-[5rem] flex justify-center">

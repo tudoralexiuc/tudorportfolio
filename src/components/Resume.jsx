@@ -23,13 +23,13 @@ function Resume() {
       </motion.div>
       <motion.div className="resume flex flex-col justify-center">
         <div></div>
-        <div className="flex justify-around md:flex-col items-center">
+        <div className="flex justify-around md:flex-col md:items-center">
           <div className="flex flex-col text-white">
             <motion.div
               className="pt-10"
               initial={{ x: '-50vw' }}
               animate={{ x: 0 }}
-              transition={{ type: 'spring', duration: 2, bounce: 0.5 }}
+              transition={{ type: 'spring', duration: 2, bounce: 0.2 }}
             >
               <h1 className="text-5xl dmb lg:text-3xl">EDUCATION</h1>
               <h5 className="text-xl dmm lg:text-sm">
@@ -41,7 +41,7 @@ function Resume() {
               className="pt-10"
               initial={{ x: '-50vw' }}
               animate={{ x: 0 }}
-              transition={{ type: 'spring', duration: 2.5, bounce: 0.5 }}
+              transition={{ type: 'spring', duration: 2.5, bounce: 0.2 }}
             >
               <h1 className="text-5xl dmb lg:text-3xl">COURSES</h1>
               <h5 className="text-xl dmm lg:text-sm">Media Design </h5>
@@ -51,7 +51,7 @@ function Resume() {
               className="pt-10"
               initial={{ x: '-50vw' }}
               animate={{ x: 0 }}
-              transition={{ type: 'spring', duration: 3, bounce: 0.5 }}
+              transition={{ type: 'spring', duration: 3, bounce: 0.2 }}
             >
               <h1 className="text-5xl dmb lg:text-3xl">SKILLS</h1>
               <div className="flex w-[300px] justify-between pt-4">
@@ -100,12 +100,12 @@ function Resume() {
               </div>
             </motion.div>
           </div>
-          <div className="flex flex-col text-white">
+          <div className="flex flex-col text-white md:w-[300px]">
             <motion.div
-              className="pt-10"
+              className="pt-[2rem]"
               initial={{ x: '-50vw' }}
               animate={{ x: 0 }}
-              transition={{ type: 'spring', duration: 2, bounce: 0.5 }}
+              transition={{ type: 'spring', duration: 2, bounce: 0.2 }}
             >
               <h1 className="text-5xl dmb lg:text-3xl">CONTACT</h1>
               <h5 className="text-xl dmm pt-2 lg:text-sm">+31 (0)6-18395035</h5>
@@ -118,7 +118,7 @@ function Resume() {
               className="pt-10"
               initial={{ x: '-50vw' }}
               animate={{ x: 0 }}
-              transition={{ type: 'spring', duration: 2.5, bounce: 0.5 }}
+              transition={{ type: 'spring', duration: 2.5, bounce: 0.2 }}
             >
               <h1 className="text-5xl dmb lg:text-3xl">NATIONALITY</h1>
               <h5 className="text-xl dmm pt-2 lg:text-sm">Romanian</h5>
@@ -127,11 +127,11 @@ function Resume() {
               className="pt-10"
               initial={{ x: '-50vw' }}
               animate={{ x: 0 }}
-              transition={{ type: 'spring', duration: 3, bounce: 0.5 }}
+              transition={{ type: 'spring', duration: 3, bounce: 0.2 }}
             >
               <h1 className="text-5xl dmb lg:text-3xl">PROJECTS</h1>
               <h5 className="text-xl dmm pt-2">Personal</h5>
-              <h5 className="text-sm dmr w-[650px]">
+              <h5 className="text-sm dmr w-[650px] md:w-[350px] md:pt-2">
                 Out of all the projects I have worked on during my ICT & Media
                 Design studies, this one has been the most captivating to me. I
                 believe the reason for my interest in this project is my passion
@@ -142,9 +142,9 @@ function Resume() {
                 that this project has significantly enhanced my front-end
                 development skills.
               </h5>
-              <div className="pt-2">
+              <div className="pt-2 md:pt-4">
                 <h5 className="text-xl dmm">F1 Grandstands</h5>
-                <h5 className="text-sm dmr w-[650px]">
+                <h5 className="text-sm dmr w-[650px] md:w-[350px] md:pt-2">
                   Part of a 4-member team, we had to create from scratch a
                   website for our client, Team Liquid. The idea of the project
                   was to make an innovative rewarding system that would make our
@@ -155,9 +155,9 @@ function Resume() {
                   done using AdobeXD.
                 </h5>
               </div>
-              <div className="pt-2">
+              <div className="pt-2 md:pt-4 md:pb-10">
                 <h5 className="text-xl dmm">Tuinexpress</h5>
-                <h5 className="text-sm dmr w-[650px]">
+                <h5 className="text-sm dmr w-[650px] md:w-[350px] md:pt-1">
                   During my internship, I decided to work for Tuinexpress in
                   Nieuwkuijk. I am very thankful for the opportunity and I have
                   managed to prove myself as a valuable colleague for the

@@ -160,7 +160,7 @@ function Tuinexpress() {
           </svg>
         </motion.div>
         <motion.div
-          className="mt-[5rem] dmb text-[3.5rem] text-left text-[#BE7536] lg:text-5xl md:text-2xl"
+          className="mt-[5rem] dmb text-[3.5rem] text-left text-white lg:text-5xl md:text-2xl"
           initial={{ x: '-100vw' }}
           animate={{ x: 0 }}
           transition={{ type: 'spring', duration: 2, bounce: 0.3 }}
@@ -174,17 +174,17 @@ function Tuinexpress() {
             transition={{ type: 'spring', duration: 1, bounce: 0.5 }}
           >
             <div className="flex mt-[3rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#BE7536] lg:text-3xl md:text-base">
+              <div className="dmb text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
                 CATEGORY
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#BE7536] lg:text-3xl md:text-base">
+              <div className="dmb text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
                 YEAR
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmb text-[1.5rem] text-left text-[#BE7536] lg:text-3xl md:text-base">
+              <div className="dmb text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
                 CLIENT
               </div>
             </div>
@@ -196,17 +196,17 @@ function Tuinexpress() {
             transition={{ type: 'spring', duration: 2, bounce: 0.3 }}
           >
             <div className="flex mt-[3rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
+              <div className="dmr text-[1.5rem] text-left text-[#BE7536] lg:text-3xl md:text-base">
                 WEB DEVELOPMENT
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
+              <div className="dmr text-[1.5rem] text-left text-[#BE7536] lg:text-3xl md:text-base">
                 2022
               </div>
             </div>
             <div className="flex mt-[1.5rem]">
-              <div className="dmr text-[1.5rem] text-left text-[white] lg:text-3xl md:text-base">
+              <div className="dmr text-[1.5rem] text-left text-[#BE7536] lg:text-3xl md:text-base">
                 TUINEXPRESS
               </div>
             </div>
@@ -214,7 +214,7 @@ function Tuinexpress() {
         </div>
         <div className="flex flex-col items-center">
           <motion.div
-            className="mt-[4rem] dmb text-[1.5rem] text-left text-[#BE7536]"
+            className="mt-[4rem] dmb text-[1.5rem] text-left text-[white]"
             initial={{ x: '-100vw' }}
             animate={{ x: 0 }}
             transition={{ type: 'spring', duration: 2.5, bounce: 0.3 }}
@@ -241,7 +241,7 @@ function Tuinexpress() {
           >
             <source src={myfirstcheckoutpageshowcase}></source>
           </motion.video>
-          <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[#BE7536]">
+          <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[white]">
             CART
           </div>
           <div className="mt-[2rem] w-[300px]">
@@ -256,7 +256,7 @@ function Tuinexpress() {
           >
             <source src={cartvideo}></source>
           </video>
-          <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[#BE7536]">
+          <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[white]">
             FOOTER
           </div>
           <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
