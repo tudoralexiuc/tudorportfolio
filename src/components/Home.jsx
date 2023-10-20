@@ -13,7 +13,7 @@ export default function Home() {
             <div className="pl-[10rem] md:pl-[0rem]">
               <Link to="/about">
                 <motion.div
-                  className="pt-[2rem] slideText2"
+                  className="pt-[2rem] slideText slideText2"
                   initial={{ y: -300 }}
                   animate={{ y: 0 }}
                   exit={{ opacity: 0, transition: { duration: 0.5 } }}
@@ -124,7 +124,7 @@ export default function Home() {
               </Link>
               <Link to="/resume">
                 <motion.div
-                  className="pt-[2rem] slideText2"
+                  className="pt-[2rem] slideText slideText2"
                   initial={{ x: -300 }}
                   animate={{ x: 0 }}
                   exit={{ opacity: 0, transition: { duration: 0.5 } }}
