@@ -5,7 +5,7 @@ import Home from './Home';
 import Resume from './Resume';
 import { AnimatePresence } from 'framer-motion';
 import Personal from './Personal';
-import Formula1 from './Formula1';
+import Shardfinders from './Shardfinders';
 import Tuinexpress from './Tuinexpress';
 
 function AnimatedRoutes() {
@@ -17,7 +17,7 @@ function AnimatedRoutes() {
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/personal" element={<Personal />} />
-        <Route path="/formula1" element={<Formula1 />} />
+        <Route path="/shardfinders" element={<Shardfinders />} />
         <Route path="/tuinexpress" element={<Tuinexpress />} />
       </Routes>
     </AnimatePresence>

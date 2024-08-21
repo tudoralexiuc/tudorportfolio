@@ -10,6 +10,7 @@ module.exports = {
         'personal-project': '#BBC9FC',
         'international-project': '#FFB677',
         'group-project': '#FF8364',
+        'stress-project': '#188198',
       },
     },
     screens: {

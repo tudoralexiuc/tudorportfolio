@@ -331,7 +331,9 @@
 }
 
 #mylefteye,
-#myrighteye {
+#myrighteye,
+#brain,
+#pieChart {
   animation: eyez 1.5s infinite linear;
   transform-origin: center;
   transform-box: fill-box;
@@ -346,8 +348,7 @@
   }
 }
 
-#sad,
-#formula1 {
+#sad {
   animation: sad 1.5s ease-in-out infinite alternate;
 }
 
@@ -357,6 +358,331 @@
   }
   to {
     transform: translateX(10px);
+  }
+}
+
+#barChart1 {
+  animation: barChart1 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes barChart1 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+#barChart2 {
+  animation: barChart2 1s ease-in-out infinite alternate;
+}
+
+@keyframes barChart2 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+#barChart3 {
+  animation: barChart3 2s ease-in-out infinite alternate;
+}
+
+@keyframes barChart3 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-7px);
+  }
+}
+
+#barChart4 {
+  animation: barChart4 1s ease-in-out infinite alternate;
+}
+
+@keyframes barChart4 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+#barChart5 {
+  animation: barChart5 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes barChart5 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+#l1 {
+  animation: l1 2s ease-in-out infinite alternate;
+}
+
+@keyframes l1 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2px);
+  }
+}
+
+#l2 {
+  animation: l2 1.9s ease-in-out infinite alternate;
+}
+
+@keyframes l2 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-4px);
+  }
+}
+
+#l3 {
+  animation: l3 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes l3 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-6px);
+  }
+}
+
+#l4 {
+  animation: l4 1.7s ease-in-out infinite alternate;
+}
+
+@keyframes l4 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+#l5 {
+  animation: l5 1.6s ease-in-out infinite alternate;
+}
+
+@keyframes l5 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+#l6 {
+  animation: l6 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes l6 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-12px);
+  }
+}
+
+#l7 {
+  animation: l7 1.4s ease-in-out infinite alternate;
+}
+
+@keyframes l7 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-14px);
+  }
+}
+
+#l8 {
+  animation: l8 1.3s ease-in-out infinite alternate;
+}
+
+@keyframes l8 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-16px);
+  }
+}
+
+#l9 {
+  animation: l9 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes l9 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-18px);
+  }
+}
+
+#l10 {
+  animation: l10 1s ease-in-out infinite alternate;
+}
+
+@keyframes l10 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+#l11 {
+  animation: l11 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes l11 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-22px);
+  }
+}
+
+#l12 {
+  animation: l12 1.4s ease-in-out infinite alternate;
+}
+
+@keyframes l12 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-24px);
+  }
+}
+
+#l13 {
+  animation: l13 1.6s ease-in-out infinite alternate;
+}
+
+@keyframes l13 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-26px);
+  }
+}
+
+#l14 {
+  animation: l14 0.9s ease-in-out infinite alternate;
+}
+
+@keyframes l14 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-28px);
+  }
+}
+
+#l15 {
+  animation: l15 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes l15 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-30px);
+  }
+}
+
+#l16 {
+  animation: l16 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes l16 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-32px);
+  }
+}
+
+#l17 {
+  animation: l17 1s ease-in-out infinite alternate;
+}
+
+@keyframes l17 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-34px);
+  }
+}
+
+#l18 {
+  animation: l18 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes l18 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-36px);
+  }
+}
+
+#l19 {
+  animation: l19 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes l19 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-38px);
+  }
+}
+
+#l20 {
+  animation: l20 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes l20 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-40px);
   }
 }
 
