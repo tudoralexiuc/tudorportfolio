@@ -7,6 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 import Personal from './Personal';
 import Shardfinders from './Shardfinders';
 import Tuinexpress from './Tuinexpress';
+import Stress from './Stress';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -18,6 +19,7 @@ function AnimatedRoutes() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/personal" element={<Personal />} />
         <Route path="/shardfinders" element={<Shardfinders />} />
+        <Route path="/stress" element={<Stress />} />
         <Route path="/tuinexpress" element={<Tuinexpress />} />
       </Routes>
     </AnimatePresence>

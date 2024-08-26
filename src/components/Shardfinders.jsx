@@ -44,8 +44,8 @@ function Shardfinders() {
           transition={{ type: 'spring', duration: 2, bounce: 0.2 }}
         >
           <svg
-            width="458"
-            height="405"
+            width="358"
+            height="305"
             viewBox="0 0 218 155"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
