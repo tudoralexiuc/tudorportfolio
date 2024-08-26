@@ -222,7 +222,7 @@ function Tuinexpress() {
             CHECKOUT
           </motion.div>
           <motion.div
-            className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]"
+            className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[450px]"
             initial={{ x: '-100vw' }}
             animate={{ x: 0 }}
             transition={{ type: 'spring', duration: 2.5, bounce: 0.3 }}
@@ -259,7 +259,7 @@ function Tuinexpress() {
           <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[white]">
             FOOTER
           </div>
-          <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
+          <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[450px]">
             <img src={footerprototype} className="shadow-2xl" />
           </div>
           <div className="mt-[5rem] w-[300px]">

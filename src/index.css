@@ -686,6 +686,17 @@
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .stressMobile {
+    width: 236px;
+    height: 236px;
+  }
+
+  .stressMobileSVG svg {
+    width: 40px;
+  }
+}
+
 @media only screen and (max-width: 1700px) {
   .slideText svg {
     width: 250px;

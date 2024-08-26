@@ -114,15 +114,15 @@ function About() {
           <div className="md:flex-col justify-between" id="section2">
             <motion.div className="">
               <motion.h1 className="text-white text-[3.8rem] p-[1rem] text-justify uppercase first-letter lg:text-[1.5rem] md:text-[1rem]">
-                I am a hard-working fourth year Media Design student that loves
-                creating web designs, while providing the best experience for
-                users. I care about the details and consider the user experience
-                to be crucial in creating effective and enjoyable interfaces I
-                really love biking and I have an affinity for fashion and
-                tattoos When I'm not writing code, I like to broaden my horizons
-                by reading non-fiction books From biographies to science, I find
-                great joy in learning and discovering new things throughout the
-                written word
+                I am a hard-working newly graduated Media Design individual with
+                a passion for creating web designs that prioritize delivering an
+                optimal user experience. I have a keen eye for detail and
+                strongly believe that user experience is essential in crafting
+                effective and enjoyable interfaces. I really love biking and I
+                have an affinity for fashion and tattoos. Also, I like to
+                broaden my horizons by reading non-fiction books from
+                biographies to science, I find great joy in learning and
+                discovering new things throughout the written word
               </motion.h1>
             </motion.div>
             <div className="">

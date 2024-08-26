@@ -216,19 +216,19 @@ function Shardfinders() {
           <div className="mt-[4rem] dmb text-[1.5rem] text-left text-[white]">
             INPUT
           </div>
-          <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
+          <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[450px]">
             <img src={FinalPhase1} className="shadow-2xl" />
           </div>
           <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[white]">
             RESULTS
           </div>
-          <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
+          <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[450px]">
             <img src={FinalPhase2} className="shadow-2xl" />
           </div>
           <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[white]">
             STATS
           </div>
-          <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[500px]">
+          <div className="mt-[2rem] w-[900px] lg:w-[700px] md:w-[450px]">
             <img src={FinalPhase3} className="shadow-2xl" />
           </div>
           <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[white] cursor-pointer hover:text-[#dbdbdb]">

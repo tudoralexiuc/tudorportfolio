@@ -60,7 +60,7 @@ function Resume() {
               </div>
               <div className="flex w-[300px] justify-between pt-4">
                 <h5 className="text-sm dmr">Figma</h5>
-                <h5 className="text-sm dmr">3 years</h5>
+                <h5 className="text-sm dmr">4 years</h5>
               </div>
               <div className="flex w-[300px] justify-between pt-4">
                 <h5 className="text-sm dmr">Axure</h5>
@@ -68,27 +68,27 @@ function Resume() {
               </div>
               <div className="flex w-[300px] justify-between pt-4">
                 <h5 className="text-sm dmr">HTML</h5>
-                <h5 className="text-sm dmr">3 years</h5>
+                <h5 className="text-sm dmr">4 years</h5>
               </div>
               <div className="flex w-[300px] justify-between pt-4">
                 <h5 className="text-sm dmr">CSS</h5>
-                <h5 className="text-sm dmr">3 years</h5>
+                <h5 className="text-sm dmr">4 years</h5>
               </div>
               <div className="flex w-[300px] justify-between pt-4">
                 <h5 className="text-sm dmr">JavaScript</h5>
-                <h5 className="text-sm dmr">2 years</h5>
+                <h5 className="text-sm dmr">4 years</h5>
               </div>
               <div className="flex w-[300px] justify-between pt-4">
                 <h5 className="text-sm dmr">React</h5>
-                <h5 className="text-sm dmr">1 year</h5>
+                <h5 className="text-sm dmr">3 years</h5>
               </div>
               <div className="flex w-[300px] justify-between pt-4">
                 <h5 className="text-sm dmr">UX/UI</h5>
-                <h5 className="text-sm dmr">3 years</h5>
+                <h5 className="text-sm dmr">4 years</h5>
               </div>
               <div className="flex w-[300px] justify-between pt-4">
                 <h5 className="text-sm dmr">GIT</h5>
-                <h5 className="text-sm dmr">3 years</h5>
+                <h5 className="text-sm dmr">4 years</h5>
               </div>
               <div className="flex w-[300px] justify-between pt-4">
                 <h5 className="text-sm dmr">Unity</h5>
@@ -96,6 +96,10 @@ function Resume() {
               </div>
               <div className="flex w-[300px] justify-between pt-4">
                 <h5 className="text-sm dmr">Blender</h5>
+                <h5 className="text-sm dmr">2 years</h5>
+              </div>
+              <div className="flex w-[300px] justify-between pt-4">
+                <h5 className="text-sm dmr">Vue.js</h5>
                 <h5 className="text-sm dmr">1 year</h5>
               </div>
             </motion.div>
@@ -124,35 +128,53 @@ function Resume() {
               <h5 className="text-xl dmm pt-2 lg:text-sm">Romanian</h5>
             </motion.div>
             <motion.div
-              className="pt-10"
+              className="pt-10 pb-10"
               initial={{ x: '-50vw' }}
               animate={{ x: 0 }}
               transition={{ type: 'spring', duration: 3, bounce: 0.2 }}
             >
               <h1 className="text-5xl dmb lg:text-3xl">PROJECTS</h1>
-              <h5 className="text-xl dmm pt-2">Personal</h5>
+              <h5 className="text-xl dmm pt-2">Shardfinders Interface</h5>
               <h5 className="text-sm dmr w-[650px] md:w-[350px] md:pt-2">
-                Out of all the projects I have worked on during my ICT & Media
-                Design studies, this one has been the most captivating to me. I
-                believe the reason for my interest in this project is my passion
-                for developing web applications. The freedom to choose my
-                preferred software, libraries, and frameworks without any
-                restrictions added to the excitement of the project. Upon
-                reflecting on my past development work, I can confidently say
-                that this project has significantly enhanced my front-end
-                development skills.
+                During my graduation internship I worked on a web application
+                called Shardfinders Interface. Shardfinders is the name assigned
+                for internal scripts that parse the information from scraped
+                articles into key-value-based objects. Shardfinders Interface
+                serves as an internal web application utilized exclusively
+                within the company. It is utilized by scripters, who are
+                employees tasked with script management to visualize the output
+                of the same shardfinder on multiple articles. The application
+                was constructed using Vue.js with Typescript and deployed within
+                an established Kubernetes cluster. My task was to address the
+                issue by improving it to a functional and updated web
+                application, enhancing usability, and optimizing the overall
+                UX/UI design
               </h5>
               <div className="pt-2 md:pt-4">
-                <h5 className="text-xl dmm">F1 Grandstands</h5>
+                <h5 className="text-xl dmm">Stress management</h5>
                 <h5 className="text-sm dmr w-[650px] md:w-[350px] md:pt-2">
-                  Part of a 4-member team, we had to create from scratch a
-                  website for our client, Team Liquid. The idea of the project
-                  was to make an innovative rewarding system that would make our
-                  client’s fans more engaged. We ended up with an innovative
-                  looking front-end, for which we used vanilla JavaScript that
-                  was approved by our client, whereas the back-end was
-                  implemented using Supabase. The wireframes and prototypes were
-                  done using AdobeXD.
+                  During this project, my team and I tried to find a solution
+                  that connects to the Moodmetric Ring and communicates stress
+                  data to people suffering from PPS (Persistent physical
+                  symptoms). This ring provides the wearer with real-time
+                  insights as well as information on the progression of stress
+                  levels over time. A challenge in this context was to provide
+                  the user with more insights about their stress and stressors
+                  in a more understandable way.
+                </h5>
+              </div>
+              <div className="pt-2 md:pt-4">
+                <h5 className="text-xl dmm">Personal</h5>
+                <h5 className="text-sm dmr w-[650px] md:w-[350px] md:pt-2">
+                  Out of all the projects I have worked on during my ICT & Media
+                  Design studies, this one has been one of the most captivating
+                  to me. I believe the reason for my interest in this project is
+                  my passion for developing web applications. The freedom to
+                  choose my preferred software, libraries, and frameworks
+                  without any restrictions added to the excitement of the
+                  project. Upon reflecting on my past development work, I can
+                  confidently say that this project has enhanced my front-end
+                  development skills
                 </h5>
               </div>
               <div className="pt-2 md:pt-4 md:pb-10">

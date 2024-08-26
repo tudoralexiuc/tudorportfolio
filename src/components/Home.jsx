@@ -1507,7 +1507,7 @@ export default function Home() {
                   </Link>
                   <Link to="/stress">
                     <motion.div
-                      className="w-[182px] h-[128px] bg-stress-project cursor-pointer shadow-2xl formula1Mobile float-right"
+                      className="w-[182px] h-[128px] bg-stress-project cursor-pointer shadow-2xl stressMobile float-right md:w-[94px] md:h-[64px]"
                       whileHover={{ scale: 0.95, zIndex: 999 }}
                       transition={{
                         type: 'spring',
@@ -1519,7 +1519,7 @@ export default function Home() {
                       animate={{ x: 0, opacity: 1 }}
                       exit={{ opacity: 0, transition: { duration: 0.5 } }}
                     >
-                      <div className="flex justify-center items-center w-full h-full formula1MobileSVG">
+                      <div className="flex justify-center items-center w-full h-full stressMobileSVG">
                         <svg
                           width="84"
                           height="97"
