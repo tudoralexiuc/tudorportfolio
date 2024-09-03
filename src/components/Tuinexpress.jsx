@@ -265,6 +265,35 @@ function Tuinexpress() {
           <div className="mt-[5rem] w-[300px]">
             <img src={footerprototypemobile} className="shadow-2xl" />
           </div>
+          <div className="mt-[10rem] dmb text-[1.5rem] text-left text-[white] cursor-pointer hover:text-[#dbdbdb]">
+            <a
+              target="_blank"
+              href="https://internship-portfolio-wheat.vercel.app/"
+            >
+              <div className="flex">
+                <div id="l1">V</div>
+                <div id="l2">I</div>
+                <div id="l3">E</div>
+                <div id="l4">W</div>
+                <div id="l5">T</div>
+                <div id="l6">H</div>
+                <div id="l7">E</div>
+                <div id="l8">E</div>
+                <div id="l9">N</div>
+                <div id="l10">T</div>
+                <div id="l11">I</div>
+                <div id="l12">R</div>
+                <div id="l13">E</div>
+                <div id="l14">P</div>
+                <div id="l15">R</div>
+                <div id="l16">O</div>
+                <div id="l17">J</div>
+                <div id="l18">E</div>
+                <div id="l19">C</div>
+                <div id="l20">T</div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </>
