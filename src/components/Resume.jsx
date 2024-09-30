@@ -3,6 +3,13 @@ import { motion, useScroll, Variants } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { IoIosArrowRoundBack, IoIosHome } from 'react-icons/io';
 
+import Hotjar from '@hotjar/browser';
+
+const siteId = 5153122;
+const hotjarVersion = 6;
+
+Hotjar.init(siteId, hotjarVersion);
+
 function Resume() {
   return (
     <>

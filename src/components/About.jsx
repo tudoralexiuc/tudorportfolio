@@ -8,6 +8,13 @@ import useScrollSnap from 'react-use-scroll-snap';
 import { IoIosArrowRoundBack, IoIosHome } from 'react-icons/io';
 import BackButton from './personal/BackButton';
 
+import Hotjar from '@hotjar/browser';
+
+const siteId = 5153122;
+const hotjarVersion = 6;
+
+Hotjar.init(siteId, hotjarVersion);
+
 function About() {
   return (
     <>

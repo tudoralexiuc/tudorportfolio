@@ -14,6 +14,13 @@ import footerprototype from '../pics/footerprototype.jpg';
 import footerprototypemobile from '../pics/footerprototypemobile.png';
 import BackButton from './personal/BackButton';
 
+import Hotjar from '@hotjar/browser';
+
+const siteId = 5153122;
+const hotjarVersion = 6;
+
+Hotjar.init(siteId, hotjarVersion);
+
 function Tuinexpress() {
   return (
     <>

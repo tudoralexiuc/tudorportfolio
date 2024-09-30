@@ -14,6 +14,13 @@ import loginF1 from '../pics/loginF1.png';
 import registerF1 from '../pics/registerF1.png';
 import BackButton from './personal/BackButton';
 
+import Hotjar from '@hotjar/browser';
+
+const siteId = 5153122;
+const hotjarVersion = 6;
+
+Hotjar.init(siteId, hotjarVersion);
+
 function Shardfinders() {
   return (
     <>

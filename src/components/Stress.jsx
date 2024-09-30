@@ -14,6 +14,13 @@ import Sleep from '../pics/Sleep.png';
 import Tension from '../pics/Tension.png';
 import StakeholderReport from '../pics/StakeholderReport.pdf';
 
+import Hotjar from '@hotjar/browser';
+
+const siteId = 5153122;
+const hotjarVersion = 6;
+
+Hotjar.init(siteId, hotjarVersion);
+
 function Stress() {
   return (
     <>

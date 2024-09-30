@@ -9,6 +9,13 @@ import Shardfinders from './Shardfinders';
 import Tuinexpress from './Tuinexpress';
 import Stress from './Stress';
 
+import Hotjar from '@hotjar/browser';
+
+const siteId = 5153122;
+const hotjarVersion = 6;
+
+Hotjar.init(siteId, hotjarVersion);
+
 function AnimatedRoutes() {
   const location = useLocation();
   return (
